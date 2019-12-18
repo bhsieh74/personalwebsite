@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Solway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+html {
+  scroll-behavior: smooth; /* not supported in all browsers */
+}
+article, div {
+    scroll-margin: 80px;
+}
+img {
+    transition: opacity 400ms;
+}
+
+
+
+.homepage {
+    background-image: url(Images/banffbg.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.blackcontainer {
+    background: black;
+    width: 100%;
+
+}
+
+.whitecontainer {
+    background-color: white;
+    width: 100%;
+
+}
+
+#description {
+    font-size: 1em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-top: 1px solid red;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: black;
+}
+
+nav > a:link, nav > a:visited {
+    font-family: 'Solway', serif;
+    font-weight: bolder;
+    font-size: 1.3em;
+    line-height: 150%;
+    margin: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.whitefont {
+    color: white;
+}
+#name {
+    color: #42aaf5;
+}
+.purple {
+    color: mediumpurple;
+    font-size: 1.5em;
+}
+h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p {
+    font-size: .8em;
+}
+
+a:link, a:visited {
+    font-size: .6em;
+    color: #32a848;
+    text-decoration: none;
+}
+
+
+nav > a:hover {
+    color: aqua;
+    font-size: 1.33em;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    max-width: 100em;
+    grid-column-gap: 100px;
+    align-content: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.projecttitle {
+    font-size: 1.1em;
+}
+
+#introduction {
+    padding-top: 10em;
+    padding-left: 5em;
+}
+#introduction > h1 {
+    font-size: 3em;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+body {
+    background-color: black;
+}
+
+#project_title {
+    margin-top: 1em;
+    font-size: 5em;
+    color:white;
+    margin-left: .5em;
+}
+#AboutMe {
+    text-align: center;
+}
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+    width:100%;
+}
+.flexbox > img, .flexbox > a {
+    margin: 0.5em;
+}
+#photoslide > img {
+    margin-left: 2em;
+}
+#metext {
+    padding: 2em;
+    font-size: 1.5em;
+}
+#Contact {
+    padding-top: 5em;
+    text-align: center;
+    font-size: 1.5em;
+}
+.bigger {
+    font-size: 1.25em;
+}
+.enlarge:hover {
+    color: green;
+    font-size: 1.01em;
+}
+
+video {
+    margin-top: 1em;
+    align-content: center;
+    width: 95%;
+}
+
+
+@media (min-width: 60em) {
+
+    #introduction {
+        padding-top: 20em;
+        padding-left: 10em;
+    }
+    
+    #introduction > h1 {
+        font-size: 8em;
+    }
+    
+    .homepage {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .blackcontainer {
+        height: 100%;
+        width:100%;
+    }
+    
+    .whitecontainer {
+        width:100%;
+        height: 100%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #projects {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 100em;
+        grid-template-rows: 1fr;
+        grid-row-gap: 0px;
+        align-content: center;
+        margin-left: 10em;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+        margin-top: 0;
+    }
+    
+    .flexbox > img, .flexbox > a {
+        margin: 1em;
+    }
+    
+    #photoslide > img {
+        margin-left: 2em;
+    }
+    
+    #Contact {
+        padding-top: 4em;
+        font-size: 2.5em;
+    }
+    video {
+        width: 500px;
+    }
+
+    .projecttitle {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    #metext {
+        font-size: 2.5em;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brian Hsieh</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="homepage">
+
+    <nav>
+      <a class="nav" href="#AboutMe">About Me</a>
+      <a class="nav" href="#projectscroll">Projects</a>
+      <a class="nav" href="#Contact">Contact</a>
+    </nav>
+    
+
+        <article id="introduction">
+            <h1 class="whitefont" id="js">Hello,<br>
+                <h1 class='whitefont'>I'm <span id="name">Brian Hsieh.</span></h1>
+                
+            </h1>
+            <h2 id="description" class="whitefont">Aspiring Computer Scientist</h2>
+            
+        </article>
+    </div>
+    
+    <div class="whitecontainer">
+        <article id="AboutMe">
+            <h1 class="blackfont" id="metext">I am currently a sophomore at <span class="purple">New York University</span> pursuing a Bachelor of the Arts in Computer Science and a minor in Data Science. My passions include PC gaming, watching TV shows, hiking at national parks, and most of all, eating good food. I also have a cat named Sailor.</h1>
+            <section class="flexbox">
+                <img src="Images/Sailor.jpg" srcset="Images/Sailor.v1.jpg 2x" alt="LaundrySailor" width=300 height=300>
+                <img src="Images/dumplings.png" srcset="Images/dumplings.v1.jpg 2x" width=300 height=300 alt="Soup Dumplings">
+                <img src="Images/brian.jpg" srcset="Images/brian.v1.jpg 2x" width=300 height=300 alt="Montserrat">
+                <img src="Images/bbq.jpg" srcset="Images/bbq.v1.jpg 2x" width=300 height=300 alt="Korean BBQ">
+                <img src="Images/sailor2.jpg" srcset="Images/sailor2.v1.jpg 2x" width=300 height=300 alt="SailorBlanket">
+
+            </section>
+            <video src="Images/sailor.mp4" width="600" height="285" controls poster="Images/Sailor3.jpg">
+                <p>Your browser cannot play this video but you can download the file <a href="Images/sailor.mp4">here</a>.</p>
+            </video>
+        </article>
+    </div>
+    
+    <div class="blackcontainer" id="projectscroll">
+        <h1 id="project_title">Projects</h1>
+        <article id="projects">
+            <h1 class="whitefont"><span class="projecttitle">Veterans' Affairs Database</span><a href="https://co.bergen.nj.us/division-of-veterans-services"><img src="Images/41-512.png" alt="VeteransLink" width=50 height=50></a>
+                <p class="whitefont">For my high school senior year capstone project, three other classmates and I decided to collaborate to create a new and improved database of clients for the Bergen County Division of Veterans' Affairs and Services. Previously, the director of Veterans' Services, AJ Luna, used paper files to keep track of all of his clients because his digital database was both unfunctionable and inefficient. Our database introduced new features, such as filtering clients with a search bar, exporting the list of clients to Microsoft Excel, along with adding a log-in screen to only allow certain individuals to access the confidential information. In addition to this, the databases' design was changed to look nicer and be more organized. </p>
+            </h1>
+            
+            <h1 class="whitefont"><span class="projecttitle">Trump, Twitter, & Text and Spam/Ham Classifier</span><a href="TrumpTwitterTexts.pdf" target="_blank"><img src="Images/41-512.png" alt="SeniorManiaLink" width=50 height=50></a>
+                <p class="whitefont">In Fall 2019, I took Professor Policastro's DS-UA-112 course. The language we used in this course was Python: more specifically, we utilized the NumPy, Pandas, Scikit-Learn, and Matplotlib libraries. The first project of the semester was to analyze the last 3,000 of President Trump's Tweets and make an analysis based on it. I chose to analyze the average sentiment of each tweet based on length of post. For the second project of the semester, we had to create an accurate classifier model to distinguish spam emails from ham emails. I chose to create a Logistic Regression  model by removing HTML tags inside of texts. My models' accuracy was approximately 90% while precision and recall were 63% and 81% respectively. </p>
+            </h1>
+
+        </article>
+    </div>
+    
+    <div class="whitecontainer">
+        <article id="Contact">
+            <h1><span class="bigger">Interested?</span></h1>
+            <h1>Feel free to shoot me an email at <a href="mailto:brianhsieh74@gmail.com" class="enlarge"><span class="bigger">bch305@nyu.edu</span></a><br>
+            <h1>or contact me through the following:</h1></h1>
+            <section class="flexbox">
+                <a href="https://github.com/bhsieh74"><img src="Images/github.png" height=80 width=80 alt="Github Icon"></a>
+                <a href="mailto:brianhsieh74@gmail.com"><img src="Images/email.png" height=80 width=80 alt="Email Icon"></a>
+                <a href="https://www.linkedin.com/in/brian-hsieh-2aa730183/"><img src="Images/linked.png" height=80 width=80 alt="LinkedIn Icon"></a>
+                <a href="https://www.facebook.com/brian.hsieh.7"><img src="Images/facebook.png" height=80 width=80 alt="Facebook Icon"></a>
+            </section>
+                        
+        </article>
+            
+    </div>
+  <script src="scripts.js"></script>
+</body>
+    <footer>
+
+    </footer>
+</html>
